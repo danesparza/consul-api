@@ -15,10 +15,5 @@
         <copyright>Copyright 2014</copyright>
         <language>en-US</language>
         <tags>consul configuration datacenter api</tags>
-        <dependencies>
-            <group targetFramework=".NETFramework4.5">
-                <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.2" />
-            </group>
-        </dependencies>
     </metadata>
 </package>
