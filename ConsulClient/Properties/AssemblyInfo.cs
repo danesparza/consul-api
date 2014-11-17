@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Consul.Tests")]
+[assembly: AssemblyTitle("ConsulClient")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Consul.Tests")]
+[assembly: AssemblyProduct("ConsulClient")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("c997dbba-a886-4e0d-8d06-8de1bd3d2216")]
+[assembly: Guid("cf83b6b8-a9e9-46a4-b935-9243758a0b36")]
 
 // Version information for an assembly consists of the following four values:
 //

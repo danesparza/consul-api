@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EAAB15A0-2C18-45B2-8C1D-4C0A85F3FC3D}</ProjectGuid>
+    <ProjectGuid>{34955247-D534-4FF5-9CBF-E796184A6C85}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Consul.Tests</RootNamespace>
-    <AssemblyName>Consul.Tests</AssemblyName>
+    <RootNamespace>ConsulClient.Tests</RootNamespace>
+    <AssemblyName>ConsulClient.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -36,7 +36,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Net.Http" />
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -51,16 +50,13 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="ConsulClientTests.cs" />
+    <Compile Include="ConsulManagerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Consul\Consul.csproj">
-      <Project>{d0b2c5a3-6780-4d29-b738-0f5ec45068bb}</Project>
-      <Name>Consul</Name>
+    <ProjectReference Include="..\ConsulClient\ConsulClient.csproj">
+      <Project>{4ff04346-eb7e-4d4c-ae37-a8e7e4225fca}</Project>
+      <Name>ConsulClient</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

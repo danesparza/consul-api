@@ -12,7 +12,7 @@
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>C# API client for Consul</description>
         <releaseNotes>Please see the project site for updated release notes</releaseNotes>
-        <copyright>Copyright 2014</copyright>
+        <copyright>Copyright 2014 Dan Esparza</copyright>
         <language>en-US</language>
         <tags>consul configuration datacenter api</tags>
     </metadata>
