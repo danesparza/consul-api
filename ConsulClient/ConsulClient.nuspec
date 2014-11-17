@@ -15,5 +15,8 @@
         <copyright>Copyright 2014 Dan Esparza</copyright>
         <language>en-US</language>
         <tags>consul configuration datacenter api</tags>
+        <dependencies>
+            <dependency id="ServiceStack.Text" version="[3.9.71]" />
+        </dependencies>
     </metadata>
 </package>
