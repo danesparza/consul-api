@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Consul-api</id>
+        <version>$version$</version>
+        <title>Consul API</title>
+        <authors>Dan Esparza</authors>
+        <owners>Dan Esparza</owners>
+        <licenseUrl>https://github.com/danesparza/consul-api/blob/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/danesparza/consul-api</projectUrl>
+        <iconUrl>https://raw.githubusercontent.com/danesparza/consul-api/master/Consul-logo.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>C# API client for Consul</description>
+        <releaseNotes>Please see the project site for updated release notes</releaseNotes>
+        <copyright>Copyright 2014</copyright>
+        <language>en-US</language>
+        <tags>consul configuration datacenter api</tags>
+        <dependencies>
+            <group targetFramework=".NETFramework4.5">
+                <dependency id="Microsoft.AspNet.WebApi.Client" version="5.2.2" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src=".\bin\Release\Consul.dll" target="lib\net45\Consul.dll" />
+    </files>
+</package>
