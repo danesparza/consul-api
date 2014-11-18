@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Consul.Config;
 using ServiceStack.Text;
 
-namespace ConsulClient
+namespace Consul
 {
     public class ConsulManager
     {

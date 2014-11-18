@@ -1,4 +1,4 @@
-﻿using System;
+﻿using Consul;
 using Consul.Config;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
