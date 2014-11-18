@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using Consul.Models;
+using Consul.Config;
 using ServiceStack.Text;
 
 namespace ConsulClient

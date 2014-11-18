@@ -1,5 +1,5 @@
 ﻿using System;
-using Consul.Models;
+using Consul.Config;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace ConsulClient.Tests

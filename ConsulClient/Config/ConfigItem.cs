@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Consul.Models
+namespace Consul.Config
 {
     /// <summary>
     /// A configuration (key/value) item.  More information here: https://www.consul.io/docs/agent/http.html#kv
