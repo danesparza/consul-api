@@ -1,4 +1,5 @@
-﻿using Consul;
+﻿using System.Diagnostics;
+using Consul;
 using Consul.Config;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -21,6 +22,7 @@ namespace ConsulClient.Tests
 
             //  Assert
             Assert.IsNotNull(configItem);
+            Debug.WriteLine("The value for key '{0}' is '{1}' (The raw base64 value is: {2})", configItem.Key, configItem.Value, configItem.Base64Value);
         }
 
         [TestMethod]
