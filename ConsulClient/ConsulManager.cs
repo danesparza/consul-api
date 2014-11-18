@@ -30,7 +30,7 @@ namespace ConsulClient
         /// <summary>
         /// Gets a config item for a given key, or null if one can't be found
         /// </summary>
-        /// <param name="configKey"></param>
+        /// <param name="configKey">The config key to get</param>
         /// <returns></returns>
         public ConfigItem GetConfigItem(string configKey)
         {
@@ -42,6 +42,23 @@ namespace ConsulClient
             //  If the result isn't null, get the first item returned
             if(result != null)
                 retval = result.FirstOrDefault();
+
+            return retval;
+        }
+
+        /// <summary>
+        /// Sets the config key to the specified value.  Returns 'true' if
+        /// the update was successful, 'false' if it was not
+        /// </summary>
+        /// <param name="configKey">The config key to set</param>
+        /// <param name="value">The value to set the config key to</param>
+        /// <returns></returns>
+        public bool SetConfigItem(string configKey, string value)
+        {
+            bool retval = false;
+
+            //  Call the ApiPut method
+            retval = ApiPut(string.Format("v1/kv/{0}", configKey), value);
 
             return retval;
         }
@@ -78,6 +95,35 @@ namespace ConsulClient
             }
 
             //  Return the results
+            return results;
+        }
+
+        /// <summary>
+        /// Generic 'put' API call.  
+        /// </summary>
+        /// <param name="apiAction">The API action.  Example:  /v1/kv/keyname </param>
+        /// <param name="value">The value to 'put'</param>
+        /// <param name="query"></param>
+        /// <param name="query">The querystring to pass (or blank, if none).  Example: ?test=value</param>
+        private bool ApiPut(string apiAction, string value, string query = "")
+        {
+            //  Initialize the results to return:
+            bool results = false;
+
+            //  Construct the full url based on the passed apiAction:
+            string fullUrl = new UriBuilder(_baseUri.Scheme, _baseUri.Host, _baseUri.Port, apiAction, query).ToString();
+
+            try
+            {
+                var resultString = fullUrl.PutJsonToUrl(value);
+                results = Convert.ToBoolean(resultString.Trim());
+            }
+            catch(WebException ex)
+            {
+                if(!ex.IsNotFound())
+                    throw;
+            }
+
             return results;
         }
     }

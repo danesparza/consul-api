@@ -38,5 +38,21 @@ namespace ConsulClient.Tests
             //  Assert
             Assert.IsNull(configItem);
         }
+
+        [TestMethod]
+        public void SetConfigItem_ValidKey_ReturnsTrue()
+        {
+            //  Arrange
+            string consulServer = "http://localhost:8500/";
+            string configValue = "This is a test";
+            string configKey = "testing/testforput";
+
+            //  Act
+            ConsulManager client = new ConsulManager(consulServer);
+            var wasSuccessful = client.SetConfigItem(configKey, configValue);
+
+            //  Assert
+            Assert.IsTrue(wasSuccessful);
+        }
     }
 }
