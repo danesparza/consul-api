@@ -12,7 +12,7 @@ Install the [NuGet package](https://www.nuget.org/packages/Consul-api/) from the
 ```powershell
 Install-Package Consul-api
 ```
-Next, you will need to provide consul-api with your Consul server endpoint in code.  Need help getting Consul setup?  Check here: https://www.consul.io/intro/getting-started/install.html
+Next, you will need to provide consul-api with your Consul server endpoint in code. 
 
 In your application, call:
 
