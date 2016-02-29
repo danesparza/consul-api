@@ -1,9 +1,7 @@
-consul-api
+consul-api [![Build status](https://ci.appveyor.com/api/projects/status/b6l1hfiknqjxogrf?svg=true)](https://ci.appveyor.com/project/danesparza/consul-api)
 ==========
 
 Consul-API is a .NET client for the highly availble service discovery and configuration system, [Consul](https://www.consul.io/).  It aims to be an easy-to-use client. Need [Consul installation instructions](https://www.consul.io/intro/getting-started/install.html)?
-
-[![Build status](https://ci.appveyor.com/api/projects/status/b6l1hfiknqjxogrf?svg=true)](https://ci.appveyor.com/project/danesparza/consul-api)
 
 ### Quick Start
 
